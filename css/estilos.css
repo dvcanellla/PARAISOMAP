@@ -3,3 +3,23 @@
     margin: auto;
 }
 
+.login__form {
+    background: #000;
+    width: 100%; /*meto ancho y alto para que me centre el div verticalmente*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+/*
+    flex-wrap: wrap;
+    gap: 12px;
+*/
+
+}
+
+
+.login__form > * {
+     margin-top: 12px;
+}
