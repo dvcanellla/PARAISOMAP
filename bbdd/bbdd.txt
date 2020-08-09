@@ -1,0 +1,2 @@
+La excel la creo Francisco para luego ir introduciendo los datos en phpMyAdmin manualmente.
+Los archivos sql los exportó para que los pudieramos importar en vez de crear las tablas nosotros.

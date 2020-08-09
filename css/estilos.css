@@ -1,4 +1,11 @@
+/*
 .mapa__centrar-mapa {
+    display: block;
+    margin: auto;
+}
+*/
+
+.img-fluid {
     display: block;
     margin: auto;
 }
@@ -9,17 +16,65 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;    
+    
+    /*imagen de fondo*/
+    background-image: url(/img/unsplash-Samuel%20Ferrara.jpg);
+    background-position: center;
+    background-size: cover;
     
 /*
     flex-wrap: wrap;
     gap: 12px;
 */
-
 }
 
+.motivo {     
+    background: rgba(255,255,255,.5);
+    width: 275px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
 
-.login__form > * {
+/*
+.login__form > * { todos los hijos
      margin-top: 12px;
 }
+*/
+
+.motivo > [type] {    /*todos los hijos que tenga type*/
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;    
+}
+
+.motivo > a {
+    font-size: 12px;
+    color: #000;
+}
+
+
+main {
+    background: #000;
+}
+
+.carousel-item {
+    height: 100vh;
+    margin-top: -48px;
+}
+
+
+.marketing__imagenes {
+    width: 100px;    
+    height: 100px;
+    border-radius: 50%;    
+}
+
+
