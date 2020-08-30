@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
     <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/css/bootstrap.min.css">    
+<link rel="stylesheet" href="css/bootstrap.min.css">    
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -42,11 +42,13 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
+   
+<!--   barra superior común a todas las páginas-->
     <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#">Carousel</a>
@@ -73,6 +75,8 @@
   </nav>
 </header>
 
+<!--fin fin barra superior-->
+
 <main role="main">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -83,7 +87,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/costa.jpg" alt="costa">
+        <img src="img/costa.jpg" alt="costa">
         <div class="container">
           <div class="carousel-caption text-left">
             <h1>Example headline.</h1>
@@ -93,7 +97,7 @@
         </div>
       </div>
       <div class="carousel-item">
-         <img src="/img/interior.jpg" alt="interior">
+         <img src="img/interior.jpg" alt="interior">
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
@@ -103,7 +107,7 @@
         </div>
       </div>
       <div class="carousel-item">
-         <img src="/img/montana.jpg" alt="montana">
+         <img src="img/montana.jpg" alt="montana">
         <div class="container">
           <div class="carousel-caption text-right">
             <h1>One more for good measure.</h1>
@@ -128,22 +132,71 @@
 <!--
 <div class="row">
     <div class="col-md-12">
-        <img src="/img/Asturias_-_Mapa_municipal.svg.png" alt="Mapa municipal Asturias" class="mapa__centrar-mapa">
+        <img src="img/Asturias_-_Mapa_municipal.svg.png" alt="Mapa municipal Asturias" class="mapa__centrar-mapa">
     </div>
 </div>
 -->
 
-<div class="row">
-    <div class="col-md-12">
-        <img src="/img/Asturias_-_Mapa_municipal.svg.png" alt="Mapa municipal Asturias" class="img-fluid">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="img/Asturias_-_Mapa_municipal.svg.png" alt="Mapa municipal Asturias" class="img-fluid">
+        </div>
     </div>
 </div>
 
-<!--Formulario municipios-->
 
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="img/costa.jpg" alt="costa" class="marketing__imagenes">
+        <h2>Costa</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+       <img src="img/interior.jpg" alt="interior" class="marketing__imagenes">
+        <h2>Interior</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/montana.jpg" alt="montana" class="marketing__imagenes">
+        <h2>Montaña</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+   
+<!--   formulario municipios-->
+   
 <form name="frmLocalidad" method="get" action="municipio.html">
-			<input type="hidden" name="w" value="0" />
-			<input type="hidden" name="o" value="0" />
+
+  <div class="form-group">
+    <label for="nombre">Dime tu nombre</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">El nombre con el que te llaman!!.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="contraseña">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+<!--      <button type="submit" class="btn btn-primary">Submit</button>    -->
+			
 			<div class="titulo">
 					<label class="form_nombre_campo" for="localidades_selector">
 						Seleccione municipio:</label>
@@ -230,41 +283,12 @@
 							<option value="villayon-id33077">Villayón</option>
 							<option value="yernes-y-tameza-villabre-id33078">Yernes y Tameza</option>
 							</select>
-						<input type="hidden" name="p" value="33" />
+				<input type="hidden" name="p" value="33" />		
 				<div class="align_right">
-					<input type="submit" value="Buscar" class="form_submit" /></div>
+					<button type="submit" class="btn btn-primary">Submit</button></div>
 			</div>
-		</form>
+</form>
 
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="/img/costa.jpg" alt="costa" class="marketing__imagenes">
-        <h2>Costa</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-       <img src="/img/interior.jpg" alt="interior" class="marketing__imagenes">
-        <h2>Interior</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="/img/montana.jpg" alt="montana" class="marketing__imagenes">
-        <h2>Montaña</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
 
 
     <!-- START THE FEATURETTES -->
@@ -320,6 +344,6 @@
     <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
 </main>
-<script src="/js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/js/jquery-3.5.1.slim.min.js"><\/script>')</script><script src="/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
+<script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="js/jquery-3.5.1.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
 </html>

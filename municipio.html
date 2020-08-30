@@ -1,10 +1,224 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Carousel Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">    
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
     
-</body>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+   
+<!--   barra superior común a todas las páginas-->
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Carousel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<!--fin fin barra superior-->
+
+
+
+
+
+<!--tarjeta-->
+
+<main role="main" class="mt-2">
+ 
+ <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+             <div class="tarjeta__municipio">
+                
+                 <div class="card" style="width: 100%;">
+                     
+                      <img class="card-img-top" src="img/allande.jpg" alt="Card image cap">
+                      
+                      <div class="card-body">
+                        <h5 class="card-title">Allande</h5>
+                        <p class="card-text">Su capital es Pola de Allande. Limita al norte con Villayón, al sur con Cangas del Narcea e Ibias, al este con Tineo y al oeste con Illano, Pesoz, Grandas de Salime y Negueira de Muñiz. Cuenta con una población de 1742 habitantes.</p>
+                      </div>
+                      
+                      
+<!--                      accordion-->
+                    
+                    
+                      <div class="accordion" id="accordionExample">
+                         
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Costa 0
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                No tenemos sitios de Costa en Allande.
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Interior 2
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="#">La iglesia románica de Santa María de Celón (S. XVI)</a></li>
+                                    <li class="list-group-item"><a href="#">Torre del Valledor (S. XVII)</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Montaña 3
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="#">El Alcornocal de Boxo</a></li>
+                                    <li class="list-group-item"><a href="#">El Teixo de Lago</a></li>
+                                    <li class="list-group-item"><a href="Sitio.html">El Teixo de Bustantigo</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+                      </div>
+                      
+                    
+                     
+                     
+                      
+                      
+                      
+                      
+<!--                      fin fin acordion-->
+                      
+                      
+                      
+                      
+<!--
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Costa 0</li>
+                        <li class="list-group-item">Interior 3</li>
+                        <li class="list-group-item">Montaña 10</li>
+                      </ul>
+-->
+                      
+                      <div class="card-body">
+                        <a href="#" class="card-link">&lt;- Volver</a>
+                      </div>
+                      
+                 </div>
+                 
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+<!-- fin fin tarjeta-->
+
+
+
+ 
+<!--Mapa de Asturias-->
+ 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="img/Mapa_Allande.png" alt="Mapa municipal Asturias" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<!--finfin Mapa de Asturias-->
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+<script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="js/jquery-3.5.1.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
 </html>
