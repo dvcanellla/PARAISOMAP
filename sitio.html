@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    
+    <title>Document</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>  
+      
+    <link rel="stylesheet" href="css/estilos.css">  
+    
+</head>
+<body>
+  
+  <!--   barra superior común a todas las páginas-->
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Carousel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<!--fin fin barra superior-->
+  
+  
+   
+<!--   mapa-->
+   
+  <div id="map" class="map map-home" style="height: 300px; margin-top: 50px"></div> 
+   
+<!--   fin fin mapa-->
+ 
+ 
+  
+<!--container-->
+ 
+  <div class="container">
+  
+    <h1 class="titulo-sitio">El Teixo de Bustantigo</h1>
+    
+    <!--  valoracion estrellas-->
+  
+    <form class="extrellas-valoración">
+      <p class="clasificacion">
+        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+        --><label for="radio1">★</label><!--
+        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+        --><label for="radio2">★</label><!--
+        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+        --><label for="radio3">★</label><!--
+        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+        --><label for="radio4">★</label><!--
+        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+        --><label for="radio5">★</label>
+        </p>
+     </form>      
+    
+     <a href="#" class="numero-valoracion">(12)</a> 
+     
+     <!--  valoracion estrellas-->
+     
+     
+    <!--carrusel imagenes-->
+
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/texo.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/allande.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/unsplash-Samuel%20Ferrara.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+
+   
+ <!--fin fin carrusel imagenes-->      
+     
+     
+<!--     imagen-->    
+     
+<!--     <img src="img/allande.jpg" class="img-fluid mt-n3" alt="Responsive image">-->     
+     
+<!--     finfin imagen-->
+  
+  
+   
+<!--   pestañas-->
+    
+    
+    <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+     
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Descripción</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Detalles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Valoraciones</a>
+      </li>
+      
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+     
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+         El tiempo se escurre a gran velocidad y hace casi un año que se llevaron a cabo las obras de mejora  en el entorno del tejo de Bustantigo en el concejo de Allande; por fin he podido ir a ver como había quedado y -en un día soleado y ventoso de este mes de diciembre- estuve haciendo unas fotos.
+      </div>
+      
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <table class="table table-dark">
+          <tbody>
+            <tr>
+              <th scope="row">Dificultad</th>
+              <td>Fácil</td>
+            </tr>
+            <tr>
+              <th scope="row">Niños</th>
+              <td>Sí</td>
+            </tr>
+            <tr>
+              <th scope="row">Agua</th>
+              <td>Fuente / Bar</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td>1h 30´</td>
+            </tr>
+          </tbody>
+        </table>        
+      </div>
+      
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small>Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+        </div>
+
+      </div>
+      
+    </div>
+    
+<!--fin fin pestañas-->
+          
+     
+  </div>  
+<!--  fin fin container-->
+   
+ <!-- FOOTER -->
+  <footer class="card-body panegro">
+    <p><a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+
+
+   
+       
+           
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>   
+   
+   
+  <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.5.1.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>   
+   
+   
+  <script>
+    
+    var map = L.map('map').setView([43.3577958,-6.6928288], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([43.3577958,-6.6928288]).addTo(map)
+        .bindPopup('El Teixo de Bustantigo')
+        .openPopup();
+    
+    
+  </script>
+    
+</body>
+</html>
